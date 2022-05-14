@@ -1,14 +1,12 @@
 package Exe02;
 
-import java.util.ArrayList;
-
-public class Agenda extends Pessoa{
+public class Agenda {
 
     private String nomeInformado;
     private int idadeInformada;
 
-    ArrayList nomePessoa = new ArrayList<String>();
-    ArrayList idadePessoa = new ArrayList<>();
+    String[] nomePessoa = new String[10];
+    int[] idadePessoa = new int[10];
 
     public void setNomeInformado(String nomeInformado) {
         this.nomeInformado = nomeInformado;
@@ -27,10 +25,10 @@ public class Agenda extends Pessoa{
     }
 
     public void adicionaPessoa() {
-        nomePessoa.add(getNome());
+
     }
 
     public void removePessoa () {
-        idadePessoa.remove(idadeInformada);
+
     }
 }
