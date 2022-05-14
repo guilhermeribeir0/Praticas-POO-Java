@@ -8,7 +8,7 @@ public class Agenda extends Pessoa{
     private int idadeInformada;
 
     ArrayList nomePessoa = new ArrayList<String>();
-    ArrayList idadePessoa = new ArrayList<String>();
+    ArrayList idadePessoa = new ArrayList<>();
 
     public void setNomeInformado(String nomeInformado) {
         this.nomeInformado = nomeInformado;
