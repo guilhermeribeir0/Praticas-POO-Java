@@ -1,27 +1,27 @@
 package Exe02;
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class Agenda {
 
-    private String nomeInformado;
-    private int idadeInformada;
-
-    String[] nomePessoa = new String[10];
-    int[] idadePessoa = new int[10];
-
-    public void setNomeInformado(String nomeInformado) {
-        this.nomeInformado = nomeInformado;
-    }
+    String nomeInformado;
+    int idadeInformada;
+    ArrayList nomePessoa = new ArrayList();
+    ArrayList idadePessoa = new ArrayList();
 
     public String getNomeInformado() {
         return nomeInformado;
     }
 
-    public void setIdadeInformada(int idadeInformada) {
-        this.idadeInformada = idadeInformada;
+    public void setNomeInformado(String nomeInformado) {
+        this.nomeInformado = nomeInformado;
     }
 
-    public int getIdadeInformada() {
-        return idadeInformada;
+    public int getIdadeInformada() { return idadeInformada; }
+
+    public void setIdadeInformada(int idadeInformada) {
+        this.idadeInformada = idadeInformada;
     }
 
     public void adicionaPessoa() {
