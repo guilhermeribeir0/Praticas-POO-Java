@@ -1,34 +1,17 @@
 package Exe02;
 
-import java.util.ArrayList;
-import java.util.Scanner;
-
 public class Agenda {
 
-    String nomeInformado;
-    int idadeInformada;
-    ArrayList nomePessoa = new ArrayList();
-    ArrayList idadePessoa = new ArrayList();
+    public void armazenaPessoa () {}
 
-    public String getNomeInformado() {
-        return nomeInformado;
+    public void removePessoa () {}
+
+    public int buscaPessoa() {
+        return 0;
     }
 
-    public void setNomeInformado(String nomeInformado) {
-        this.nomeInformado = nomeInformado;
-    }
+    public void imprimeAgenda () {}
 
-    public int getIdadeInformada() { return idadeInformada; }
+    public void imprimePessoa () {}
 
-    public void setIdadeInformada(int idadeInformada) {
-        this.idadeInformada = idadeInformada;
-    }
-
-    public void adicionaPessoa() {
-
-    }
-
-    public void removePessoa () {
-
-    }
 }
