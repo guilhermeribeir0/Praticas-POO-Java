@@ -2,9 +2,9 @@ package Exe02;
 
 public class Agenda {
 
-    public void armazenaPessoa () {}
+    public void armazenaPessoa (String nome, int idade, float altura) {}
 
-    public void removePessoa () {}
+    public void removePessoa (String nome) {}
 
     public int buscaPessoa() {
         return 0;
@@ -12,6 +12,6 @@ public class Agenda {
 
     public void imprimeAgenda () {}
 
-    public void imprimePessoa () {}
+    public void imprimePessoa (int index) {}
 
 }
