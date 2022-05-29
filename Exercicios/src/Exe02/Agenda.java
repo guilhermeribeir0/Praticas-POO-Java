@@ -1,7 +1,6 @@
 package Exe02;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class Agenda{
@@ -41,12 +40,16 @@ public class Agenda{
     }
 
     public void removePessoa(String nome) {
-
+        int index = getNome().indexOf(nome);
+        this.nome.remove(nome);
+        this.idade.remove(index);
+        this.altura.remove(index);
     }
 
-    //Temporario
     public int buscaPessoa(String nome) {
-        return 0;
+        int index = getNome().indexOf(nome);
+        System.out.println("Posicao no cadastro: " + index);
+        return index;
     }
 
     public void imprimeAgenda() {
