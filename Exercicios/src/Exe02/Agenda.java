@@ -41,7 +41,7 @@ public class Agenda{
 
     public void removePessoa(String nome) {
         int index = getNome().indexOf(nome);
-        this.nome.remove(nome);
+        this.nome.remove(index);
         this.idade.remove(index);
         this.altura.remove(index);
     }
