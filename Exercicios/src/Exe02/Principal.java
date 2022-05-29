@@ -1,5 +1,6 @@
 package Exe02;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class Principal {
@@ -10,9 +11,9 @@ public class Principal {
 
         Agenda agenda = new Agenda();
 
-        String[] nomeInformado = new String[10];
-        int[] idadeInformada = new int[10];
-        float[] alturaInformada = new float[10];
+        String nomeInformado;
+        int idadeInformada;
+        float alturaInformada;
         int escolha;
 
         System.out.println("---- Bem Vindo(a) a Agenda ----");
@@ -26,16 +27,14 @@ public class Principal {
                     System.out.print("Informe quantas pessoas quer cadastrar: ");
                     int quantidadePessoas = input.nextInt();
                     for (int i = 0; i < quantidadePessoas; i++) {
-                        if (nomeInformado[i] == null ) {
                             System.out.print("Informe o nome: ");
-                            nomeInformado[i] = input.next();
+                            nomeInformado = input.next();
                             System.out.print("Informe a idade: ");
-                            idadeInformada[i] = input.nextInt();
+                            idadeInformada = input.nextInt();
                             System.out.print("Informe a altura: ");
-                            alturaInformada[i] = input.nextFloat();
+                            alturaInformada = input.nextFloat();
                             agenda.armazenaPessoa(nomeInformado, idadeInformada, alturaInformada);
                         }
-                    }
                     break;
                 case 2:
 
