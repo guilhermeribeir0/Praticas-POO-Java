@@ -23,7 +23,7 @@ public class Principal {
         if (escolha < 6) {
             switch (escolha) {
                 case 1:
-                    System.out.println("Informe quantas pessoas quer cadastrar: ");
+                    System.out.print("Informe quantas pessoas quer cadastrar: ");
                     int quantidadePessoas = input.nextInt();
                     for (int i = 0; i < quantidadePessoas; i++) {
                         if (nomeInformado[i] == null ) {
