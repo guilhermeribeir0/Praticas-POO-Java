@@ -10,9 +10,6 @@ public class Principal {
 
         Agenda agenda = new Agenda();
 
-        String nomeInformado;
-        int idadeInformada;
-        float alturaInformada;
         int escolha = 0;
 
         System.out.println("---- Bem Vindo(a) a Agenda ----");
@@ -30,11 +27,11 @@ public class Principal {
 
                     for (int k = 0; k < quantidadePessoas; k++) {
                         System.out.print("Informe o nome: ");
-                        nomeInformado = input.next();
+                        String nomeInformado = input.next();
                         System.out.print("Informe a idade: ");
-                        idadeInformada = input.nextInt();
+                        int idadeInformada = input.nextInt();
                         System.out.print("Informe a altura: ");
-                        alturaInformada = input.nextFloat();
+                        float alturaInformada = input.nextFloat();
                         agenda.armazenaPessoa(nomeInformado, idadeInformada, alturaInformada);
                     }
                     System.out.println("****( Concluido com sucesso )****\n-------------------------");
