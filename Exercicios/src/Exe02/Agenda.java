@@ -57,6 +57,10 @@ public class Agenda{
     }
 
     public void imprimePessoa(int index) {
-
+        if (index < getNome().size()) {
+            System.out.println("Nome: " + nome.get(index) + "\nIdade: " + idade.get(index) + "\nAltura: " + altura.get(index));
+        } else {
+            System.out.println("Não existe cadastro!");
+        }
     }
 }

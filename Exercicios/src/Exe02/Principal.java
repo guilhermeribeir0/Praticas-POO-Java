@@ -63,10 +63,11 @@ public class Principal {
                     System.out.print("Informe a posição: ");
                     int pessoaListar = input.nextInt();
                     agenda.imprimePessoa(pessoaListar);
+                    System.out.println("****( Concluido com sucesso )****\n-------------------------");
                     break;
 
                 case 6:
-                    System.out.println("****( Concluido com sucesso )****\n-------------------------");
+                    System.out.println("------------------------ \n**** PROGRAMA FINALIZADO! ****");
                     break;
             }
         }
