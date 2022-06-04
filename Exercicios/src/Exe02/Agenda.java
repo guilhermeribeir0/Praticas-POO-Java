@@ -1,5 +1,7 @@
 package Exe02;
 
+import jdk.swing.interop.SwingInterOpUtils;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -53,11 +55,16 @@ public class Agenda{
     }
 
     public void imprimeAgenda() {
-            System.out.println("Nomes: " + nome + "\nIdades: " + idade + "\nAlturas: " + altura);
+        System.out.println("****( Lista de Cadastros )****");
+        for(int i = 0; i < getNome().size(); i++) {
+            System.out.println(i + " - Nome: " + nome.get(i) + " | Idade: " + idade.get(i) + " | Altura: " + altura.get(i));
+        }
     }
+
 
     public void imprimePessoa(int index) {
         if (index < getNome().size()) {
+            System.out.println("****( Informações )****");
             System.out.println("Nome: " + nome.get(index) + "\nIdade: " + idade.get(index) + "\nAltura: " + altura.get(index));
         } else {
             System.out.println("Não existe cadastro!");
