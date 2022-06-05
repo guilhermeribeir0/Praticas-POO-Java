@@ -12,6 +12,7 @@ public class Principal3 {
 
         int escolha = 0;
 
+        System.out.println("------ Bem vindo(a) ------");
         System.out.print("Informe a capacidade do Elevador: ");
         int capacidade = input.nextInt();
         System.out.print("Informe o total de andares do prédio: ");
@@ -21,17 +22,17 @@ public class Principal3 {
         for (int i = 0; escolha != 5; i++) {
             System.out.println("----------- Elevador -----------\nCapacidade Total: 10 Pessoas");
             System.out.println("1 - Entra \n2- Sai \n3 - Subir \n4 - Descer \n5 - Parar Programa");
-            System.out.println("Escolha uma das opcoes acima: ");
+            System.out.print("Escolha uma das opcoes acima: ");
             escolha = input.nextInt();
 
             switch (escolha) {
                 case 1:
-                    System.out.println("Entraram (qtd): ");
+                    System.out.print("Entraram (qtd): ");
                     int pessoasEntram = input.nextInt();
                     elevador.entra(pessoasEntram);
                     break;
                 case 2:
-                    System.out.println("Sairam (qtd): ");
+                    System.out.print("Sairam (qtd): ");
                     int pessoasSai = input.nextInt();
                     elevador.sai(pessoasSai);
                     break;
