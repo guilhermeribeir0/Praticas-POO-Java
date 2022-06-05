@@ -62,11 +62,8 @@ public class Principal {
                     agenda.imprimePessoa(pessoaListar);
                     System.out.println("****( Concluido com sucesso )****\n-------------------------");
                     break;
-
-                case 6:
-                    System.out.println("------------------------ \n**** PROGRAMA FINALIZADO! ****");
-                    break;
             }
         }
+        System.out.println("------------------------ \n**** PROGRAMA FINALIZADO! ****");
     }
 }
