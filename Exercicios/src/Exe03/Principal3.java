@@ -42,13 +42,14 @@ public class Principal3 {
                 case 4:
                     elevador.desce();
                     break;
+                case 5:
+                    System.out.println("---------------------\nPrograma Finalizado!");
+                    break;
                 default:
                     System.out.println("**( Opção informada não existe! )**");
                     break;
             }
         }
-        System.out.println("---------------------\nPrograma Finalizado!");
-
     }
 
 }
