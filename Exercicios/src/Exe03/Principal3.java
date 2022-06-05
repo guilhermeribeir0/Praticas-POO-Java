@@ -42,6 +42,9 @@ public class Principal3 {
                 case 4:
                     elevador.desce();
                     break;
+                default:
+                    System.out.println("**( Opção informada não existe! )**");
+                    break;
             }
         }
         System.out.println("---------------------\nPrograma Finalizado!");
