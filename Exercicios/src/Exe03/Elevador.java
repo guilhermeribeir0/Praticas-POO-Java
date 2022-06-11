@@ -31,9 +31,8 @@ public class Elevador {
     }
 
     public void sobe() {
-        int andarSubir = 1;
         if(andar >= 0 && andar < totalAndares) {
-            andar += andarSubir;
+            andar++;
             System.out.println("Andar: " + andar);
         } else {
             System.out.println("**( Ultimo andar! )**");
@@ -41,11 +40,13 @@ public class Elevador {
     }
 
     public void desce() {
-        int andarDescer = 1;
-
         if(andar > 0 && andar <= totalAndares) {
-            andar -= andarDescer;
-            System.out.println("Andar: " + andar);
+            andar--;
+            if(andar == 0) {
+                System.out.println("Andar: Térreo");
+            } else {
+                System.out.println("Andar: " + andar);
+            }
         } else {
             System.out.println("**( Térreo! )**");
         }
