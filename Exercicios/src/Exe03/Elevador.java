@@ -48,7 +48,7 @@ public class Elevador {
                 System.out.println("Andar: " + andar);
             }
         } else {
-            System.out.println("**( Térreo! )**");
+            System.out.println("**( Está no Térreo! )**");
         }
     }
 }
