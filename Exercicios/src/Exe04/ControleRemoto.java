@@ -27,7 +27,7 @@ public class ControleRemoto {
         if(canal == 30) {
             System.out.println("Não existe mais canais!");
         } else {
-            canal++;
+            this.canal++;
             System.out.println("Canal atual: " + canal);
         }
     }
@@ -36,7 +36,7 @@ public class ControleRemoto {
         if(canal == 1) {
             System.out.println("Não permitido!");
         } else {
-            canal--;
+            this.canal--;
             System.out.println("Canal atual: " + canal);
         }
     }
